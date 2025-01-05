@@ -209,18 +209,18 @@
 
 ### 向量的长度（范数）
 
-> 实向量 $\boldsymbol a = [a_1, a_2, \cdots, a_n]^T$ 的长度（也叫做范数）记作 $||a||$，规定 
+> 实向量 $\boldsymbol a = [a_1, a_2, \cdots, a_n]^T$ 的长度（也叫做范数）记作 $\lVert a \rVert$，规定 
 >
 > $$
-> ||a|| = \sqrt{(\boldsymbol a, \boldsymbol a)} = \sqrt{a_1^2 + a_2^2 + \cdots + a_n^2} \\
+> \lVert a \rVert = \sqrt{(\boldsymbol a, \boldsymbol a)} = \sqrt{a_1^2 + a_2^2 + \cdots + a_n^2} \\
 > $$
 
-> 对于非零向量 $\boldsymbol a$，称 $\dfrac{\boldsymbol a}{||\boldsymbol a||}$ 为 $\boldsymbol a$ 的单位化向量。
+> 对于非零向量 $\boldsymbol a$，称 $\dfrac{\boldsymbol a}{\lVert\boldsymbol a \rVert}$ 为 $\boldsymbol a$ 的单位化向量。
 
-> 1. $||\boldsymbol a|| \geqslant 0$，且 $||\boldsymbol a|| = 0 \iff \boldsymbol a = \boldsymbol 0$
-> 1. $||k \boldsymbol a|| = |k| \times ||\boldsymbol a||$
-> 1. $||\boldsymbol a + \boldsymbol b|| \leqslant ||\boldsymbol a|| + ||\boldsymbol b||$
-> 1. $|(\boldsymbol a, \boldsymbol b)| \leqslant ||\boldsymbol a|| \times ||\boldsymbol b||$
+> 1. $\lVert\boldsymbol a \rVert \geqslant 0$，且 $\lVert\boldsymbol a \rVert = 0 \iff \boldsymbol a = \boldsymbol 0$
+> 1. $\lVert k \boldsymbol a \rVert = |k| \times \lVert\boldsymbol a \rVert$
+> 1. $\lVert\boldsymbol a + \boldsymbol b \rVert \leqslant \lVert\boldsymbol a \rVert + \lVert\boldsymbol b \rVert$
+> 1. $|(\boldsymbol a, \boldsymbol b)| \leqslant \lVert\boldsymbol a \rVert \times \lVert\boldsymbol b \rVert$
 
 ### 正交向量组
 
@@ -235,7 +235,7 @@
 > $$
 \begin{cases}
     b_1 = a_1, \\
-    b_j = a_j - \displaystyle\sum_{i = 1}^{j - 1} \frac{b_i^T a_j}{||\boldsymbol b_i||^2} b_i \\
+    b_j = a_j - \displaystyle\sum_{i = 1}^{j - 1} \frac{b_i^T a_j}{\lVert\boldsymbol b_i \rVert^2} b_i \\
 \end{cases}
 > $$
 >
